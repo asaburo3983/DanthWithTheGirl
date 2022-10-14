@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 namespace Player
 {
@@ -10,6 +10,10 @@ namespace Player
     {
         Data data;
         public VrmArPlayer.FingerController fingerController;
+
+        float fingerRotaR = 0;
+        float fingerRotaL = 0;
+        public float fingerRotaSpeed = 1.0f;
         // Start is called before the first frame update
         void Start()
         {
@@ -19,18 +23,30 @@ namespace Player
         // Update is called once per frame
         void Update()
         {
-            // 右手の人差し指だけ伸ばしてあと全部曲げる
-            fingerController.FingerRotation(VrmArPlayer.FingerController.FingerType.RightAll, 1.0f);
-            fingerController.FingerRotation(VrmArPlayer.FingerController.FingerType.RightIndex, 0.0f);
-
-            //this.transform.DOMove(new Vector3(5f, 0f, 0f), 3f);
+            GripFinger();
         }
+        //指曲げ処理
         void GripFinger()
         {
             if (data.gripHandL.Value)
             {
-
+                if (fingerRotaR < 0) fingerRotaR += fingerRotaSpeed * Time.deltaTime;
             }
+            else
+            {
+                if (fingerRotaR > 0) fingerRotaR -= fingerRotaSpeed * Time.deltaTime;
+            }
+            if (data.gripHandR.Value)
+            {
+                if (fingerRotaL > 0) fingerRotaL += fingerRotaSpeed * Time.deltaTime;
+            }
+            else
+            {
+                if (fingerRotaL > 0) fingerRotaL -= fingerRotaSpeed * Time.deltaTime;
+            }
+
+            fingerController.FingerRotation(VrmArPlayer.FingerController.FingerType.RightAll, fingerRotaR);
+            fingerController.FingerRotation(VrmArPlayer.FingerController.FingerType.LeftAll, fingerRotaL);
         }
     }
 }
