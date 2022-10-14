@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FacialChange : MonoBehaviour
+public class FacialChange_Dance : MonoBehaviour
 {
 
     public SkinnedMeshRenderer faceMesh;
@@ -23,7 +23,5 @@ public class FacialChange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        faceMesh.SetBlendShapeWeight(2, 100);
-        int a = 100;
     }
 }
