@@ -13,8 +13,6 @@ public class FacialChange_Dance : MonoBehaviour
         //表情変化テスト
         var index = faceMesh.sharedMesh.GetBlendShapeIndex("Fcl_BRW_Angry");
         faceMesh.SetBlendShapeWeight(index, 100);
-        index = faceMesh.sharedMesh.GetBlendShapeIndex("Fcl_BRW_Angry");
-        faceMesh.SetBlendShapeWeight(index, 100);
         index = faceMesh.sharedMesh.GetBlendShapeIndex("Fcl_MTH_Angry");
         faceMesh.SetBlendShapeWeight(index, 100);
 
