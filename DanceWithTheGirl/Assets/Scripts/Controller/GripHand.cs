@@ -21,7 +21,18 @@ namespace Controller {
         // Update is called once per frame
         void Update()
         {
+            
             var data = Player.Data.instance;
+            //ステート変化
+            if (data.gripHandL.Value || data.gripHandR.Value)
+            {
+                data.animState = Player.Data.AnimState.DANCE;
+            }
+            else
+            {
+                data.animState = Player.Data.AnimState.IDLE;
+            }
+
             if (handLR == HandLR.L)
             {
                 if (OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger) ||

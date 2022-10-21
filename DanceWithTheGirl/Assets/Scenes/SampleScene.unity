@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fingerController: {fileID: 166773782}
-  fingerRotaSpeed: 1
+  fingerRotaSpeed: 60
 --- !u!114 &166773782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +286,21 @@ MonoBehaviour:
   gripHandL:
     value: 1
   IKScript: {fileID: 166773784}
+--- !u!114 &166773789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166773780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf6e6e64698608409457cf20560678d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hmd: {fileID: 246853620}
+  playerLeftHand: {fileID: 567355940}
+  playerRightHand: {fileID: 570245770}
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +382,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223974226}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &246853620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 1012674824}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &449199264 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6184667960993406941, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
@@ -747,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[1]
-      value: 36.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[2]
@@ -759,6 +779,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[12]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[17]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[28]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7140606858727328969, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
