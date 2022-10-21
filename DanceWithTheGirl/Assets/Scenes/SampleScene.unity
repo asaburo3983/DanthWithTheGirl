@@ -214,6 +214,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -1728013695380148634, guid: 1ea3f5e13509c8e4bb401b325da5455d, type: 3}
   m_PrefabInstance: {fileID: 761111839}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &166773781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166773780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc5d54f79049f541a66e9f6d056e135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fingerController: {fileID: 166773782}
+  fingerRotaSpeed: 1
+--- !u!114 &166773782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166773780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f054ef9864d4614ca84702051a4a40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &166773783
 MonoBehaviour:
   m_ObjectHideFlags: 0
