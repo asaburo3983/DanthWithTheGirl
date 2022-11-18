@@ -5499,6 +5499,7 @@ MonoBehaviour:
   cameraObj: {fileID: 0}
   handLObj: {fileID: 0}
   handRObj: {fileID: 0}
+
 --- !u!1 &3690724432095488484
 GameObject:
   m_ObjectHideFlags: 0
