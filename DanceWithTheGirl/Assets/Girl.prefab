@@ -4730,6 +4730,7 @@ GameObject:
   - component: {fileID: 6557662655179925591}
   - component: {fileID: 4643762382458757148}
   - component: {fileID: 6155251294361824327}
+  - component: {fileID: 3530788600858396202}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -5499,7 +5500,19 @@ MonoBehaviour:
   cameraObj: {fileID: 0}
   handLObj: {fileID: 0}
   handRObj: {fileID: 0}
-
+--- !u!114 &3530788600858396202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676524732853675827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8611b8a564a9450419c6349cee39a525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeState: 1
 --- !u!1 &3690724432095488484
 GameObject:
   m_ObjectHideFlags: 0
