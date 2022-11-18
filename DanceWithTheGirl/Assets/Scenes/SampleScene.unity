@@ -1587,6 +1587,18 @@ PrefabInstance:
       propertyPath: RightHandIKTarget
       value: 
       objectReference: {fileID: 567355940}
+    - target: {fileID: 6557662655179925587, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 6557662655051000907}
+    - target: {fileID: 6557662655179925587, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: gripHandL.value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925587, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: gripHandR.value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6557662655179925591, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: hmd
       value: 
@@ -1629,3 +1641,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22033a4154881754b903495830fd9f49, type: 3}
+--- !u!95 &6557662655051000907 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1771834958361884500, guid: 22033a4154881754b903495830fd9f49, type: 3}
+  m_PrefabInstance: {fileID: 6557662655051000906}
+  m_PrefabAsset: {fileID: 0}
