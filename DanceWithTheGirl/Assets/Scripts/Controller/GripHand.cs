@@ -23,14 +23,18 @@ namespace Controller {
         {
             
             var data = Player.Data.instance;
+            var handParam = data.animator.GetBool("hand");
+
             //ステート変化
             if (data.gripHandL.Value || data.gripHandR.Value)
             {
                 data.animState = Player.Data.AnimState.DANCE;
+                handParam = true;
             }
             else
             {
                 data.animState = Player.Data.AnimState.IDLE;
+                handParam = false;
             }
 
             if (handLR == HandLR.L)
