@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -10,22 +11,25 @@ using UnityEditor;
 public class StartButton : MonoBehaviour
 {
     [SerializeField] float time = 1.0f;
+    [SerializeField] float alpha = 1f;
     bool ones = false;
 
+    [SerializeField]
+    UnityEvent ev;
 
     private void Start()
     {
-        //FadeIn();
+        ev.Invoke();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void In(float delay)
     {
-        if (!ones &&
-            OVRInput.GetDown(OVRInput.RawButton.B)) {
-            ones = true;
-            FadeIn();
-        }
+        DOVirtual.DelayedCall(delay, () => FadeIn());
+    }
+
+    public void Out(float delay)
+    {
+        DOVirtual.DelayedCall(delay, () => FadeOut());
     }
 
     public void FadeIn()
@@ -55,10 +59,10 @@ public class StartButton : MonoBehaviour
     {
         if (TryGetComponent<Image>(out var im)) {
             Color col = im.color;
-            col.a = 1;
+            col.a = alpha;
 
             im.DOColor(col, time).OnComplete(() => {
-                col.a = 1;
+                col.a = alpha;
                 im.color = col;
             });
         }
