@@ -549,6 +549,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &601728469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6437277283708120083, guid: 22033a4154881754b903495830fd9f49, type: 3}
+  m_PrefabInstance: {fileID: 6557662655051000906}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263626079}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.023, y: 1.886, z: 1.343}
+  m_LocalPosition: {x: 0.023, y: 1.886, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1012674825}
@@ -1567,6 +1572,10 @@ PrefabInstance:
       propertyPath: m_BlendShapeWeights.Array.data[47]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4643762382458757148, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 601728469}
     - target: {fileID: 6155251294361824327, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: handLObj
       value: 
