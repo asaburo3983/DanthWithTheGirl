@@ -7,12 +7,11 @@ using UniRx;
 public class LookControl : MonoBehaviour
 {
     [SerializeField] private float handShakeTime = 1f;
-    [SerializeField] private float randTime = 5f;
+    [SerializeField] private float handLooktime=1f;
 
     [SerializeField] private Transform cameraObj;
     [SerializeField] private Transform handLObj;
     [SerializeField] private Transform handRObj;
-
     private LookPlayer lookPlayer;
 
     private int randRate = 100;
@@ -56,7 +55,8 @@ public class LookControl : MonoBehaviour
     {
         if (lookPlayer.lookAtObj == handLObj) return;
 
-        lookPlayer.lookAtObj = _tra;
+        lookPlayer.SetLookAtObj(_tra, handLooktime);
+
 
         // �v���C���[���݂�
         DOVirtual.DelayedCall(handShakeTime, () => {
@@ -70,22 +70,22 @@ public class LookControl : MonoBehaviour
     /// </summary>
     private void RandLookHand()
     {
-        // �E
-        if (Player.Data.instance.gripHandL.Value)
-        {
-            lookPlayer.lookAtObj = handLObj.transform;
-        }
+        //// �E
+        //if (Player.Data.instance.gripHandL.Value)
+        //{
+        //    lookPlayer.SetLookAtObj(handLObj.transform, 2);
+        //}
 
-        // ��
-        if (Player.Data.instance.gripHandR.Value)
-        {
-            lookPlayer.lookAtObj = handRObj.transform;
-        }
+        //// ��
+        //if (Player.Data.instance.gripHandR.Value)
+        //{
+        //    lookPlayer.SetLookAtObj(handRObj.transform, 2);
+        //}
 
-        // �v���C���[������
-        DOVirtual.DelayedCall(randTime, () => {
-            LookPlayer();
-        });
+        //// �v���C���[������
+        //DOVirtual.DelayedCall(randTime, () => {
+        //    LookPlayer();
+        //});
     }
 
     /// <summary>
@@ -95,7 +95,7 @@ public class LookControl : MonoBehaviour
     {
         if (lookPlayer.lookAtObj == cameraObj) return;
 
-        lookPlayer.lookAtObj = cameraObj.transform;
+        lookPlayer.SetLookAtObj(cameraObj.transform, 1);
     }
 
     /// <summary>
@@ -105,7 +105,7 @@ public class LookControl : MonoBehaviour
     {
         if (!Player.Data.instance.gripHandL.Value && !Player.Data.instance.gripHandR.Value)
         {
-            lookPlayer.lookAtObj = null;
+            lookPlayer.SetLookAtObj(null, 1);
             return false;
         }
         return true;
