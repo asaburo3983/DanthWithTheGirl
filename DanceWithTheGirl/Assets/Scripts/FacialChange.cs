@@ -99,7 +99,7 @@ namespace Player
             indexs.Add(index);
             faceMesh.SetBlendShapeWeight(index, 100);
 
-            index = faceMesh.sharedMesh.GetBlendShapeIndex("Fcl_MTH_FUN");
+            index = faceMesh.sharedMesh.GetBlendShapeIndex("Fcl_MTH_Fun");
             indexs.Add(index);
             faceMesh.SetBlendShapeWeight(index, 100);
         }
