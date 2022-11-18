@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class LookPlayer : MonoBehaviour
 {
@@ -18,14 +20,17 @@ public class LookPlayer : MonoBehaviour
     [SerializeField, Range(0, 1)]
     private float clampWeight = 0.5f;
 
+    [SerializeField] private Transform face;
+    private Vector3 lookPos;
+
     // Use this for initialization
     void Start()
     {
         avator = GetComponent<Animator>();
-        if (lookAtObj == null)
-        {
-            lookAtObj = Camera.main.transform;
-        }
+        //if (lookAtObj == null)
+        //{
+        //    lookAtObj = Camera.main.transform;
+        //}
     }
 
     void OnAnimatorIK(int layorIndex)
@@ -33,7 +38,26 @@ public class LookPlayer : MonoBehaviour
         if (avator)
         {
             avator.SetLookAtWeight(lookAtWeight, bodyWeight, headWeight, eyesWeight, clampWeight);
-            avator.SetLookAtPosition(lookAtObj.position);
+
+            // ’l‚Ì‘ã“ü
+            Vector3 vector3;
+            if (lookAtObj == null)
+            {
+                var _face = face.position;
+                _face.y += .05f;
+                vector3 = _face;
+            }
+            else
+            {
+                vector3 = lookAtObj.transform.position;
+            }
+
+            // ˆÊ’u‚Ì•â³
+            var time = 1f;
+            DOTween.To(() => lookPos, (value) => lookPos = value, vector3, time);
+
+            avator.SetLookAtPosition(lookPos);
+            
         }
     }
 }

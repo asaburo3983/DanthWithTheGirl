@@ -39,14 +39,14 @@ public class LookControl : MonoBehaviour
             return;
         }
 
-        // �v���C���[���݂Ă���Ƃ�
-        if (lookPlayer.lookAtObj == cameraObj)
-        {
-            if (Random.Range(0, randRate) == 0)
-            {
-                RandLookHand();
-            }
-        }
+        //// �v���C���[���݂Ă���Ƃ�
+        //if (lookPlayer.lookAtObj == cameraObj)
+        //{
+        //    if (Random.Range(0, randRate) == 0)
+        //    {
+        //        RandLookHand();
+        //    }
+        //}
     }
 
     /// <summary>
