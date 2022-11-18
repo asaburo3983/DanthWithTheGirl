@@ -204,6 +204,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40919614}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &71567117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3676524732853675827, guid: 22033a4154881754b903495830fd9f49, type: 3}
+  m_PrefabInstance: {fileID: 6557662655051000906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71567129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71567117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce2df58c2db9b5428074e8a2327acb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handShakeTime: 1
+  randTime: 5
+  cameraObj: {fileID: 1263626080}
+  handLObj: {fileID: 567355940}
+  handRObj: {fileID: 570245770}
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2060895383793337637, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 2060895383793337637, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1016,6 +1038,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 246853620}
     - target: {fileID: 6557662655179925591, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925591, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: playerLeftHand
       value: 
       objectReference: {fileID: 567355940}
@@ -1023,5 +1049,9 @@ PrefabInstance:
       propertyPath: playerRightHand
       value: 
       objectReference: {fileID: 570245770}
+    - target: {fileID: 8109130764295096128, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: lookAtObj
+      value: 
+      objectReference: {fileID: 1263626080}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22033a4154881754b903495830fd9f49, type: 3}
