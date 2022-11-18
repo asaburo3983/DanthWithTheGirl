@@ -22,6 +22,7 @@ public class LookPlayer : MonoBehaviour
 
     [SerializeField] private Transform face;
     private Vector3 lookPos;
+    private float easingTime = 1;
 
     // Use this for initialization
     void Start()
@@ -49,15 +50,20 @@ public class LookPlayer : MonoBehaviour
             }
             else
             {
-                vector3 = lookAtObj.transform.position;
+                vector3 = lookAtObj.position;
             }
 
             // ˆÊ’u‚Ì•â³
-            var time = 1f;
-            DOTween.To(() => lookPos, (value) => lookPos = value, vector3, time);
+            DOTween.To(() => lookPos, (value) => lookPos = value, vector3, easingTime);
 
             avator.SetLookAtPosition(lookPos);
             
         }
+    }
+
+    public void SetLookAtObj(Transform _tra,float _time)
+    {
+        lookAtObj = _tra;
+        easingTime = _time;
     }
 }
