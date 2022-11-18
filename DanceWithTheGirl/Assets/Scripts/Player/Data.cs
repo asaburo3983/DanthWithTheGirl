@@ -18,6 +18,7 @@ namespace Player
             DANCE
         }
         public AnimState animState;
+        public Animator animator;
 
         //˜r‚Â‚©‚Ý”»’è
         [Header("˜r‚Â‚©‚Ý”»’èR")] public ReactiveProperty<bool> gripHandR;
