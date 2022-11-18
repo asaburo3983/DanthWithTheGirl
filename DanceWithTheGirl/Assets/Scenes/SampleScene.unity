@@ -1003,6 +1003,110 @@ PrefabInstance:
       propertyPath: m_Name
       value: Girl
       objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[8]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[9]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[10]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[11]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[16]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[17]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[18]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[20]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[21]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[25]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[27]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[28]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[29]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[30]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[31]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[32]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[34]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[35]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[40]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[43]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[45]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042534175270258076, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[47]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6557662655179925586, guid: 22033a4154881754b903495830fd9f49, type: 3}
       propertyPath: LeftHandIKTarget
       value: 
@@ -1023,5 +1127,29 @@ PrefabInstance:
       propertyPath: playerRightHand
       value: 
       objectReference: {fileID: 570245770}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: handR
+      value: 
+      objectReference: {fileID: 570245770}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: facialChangePoint.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: facialChangePoint.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: facialChangePoint.Array.data[1]
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: facialChangePoint.Array.data[2]
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557662655179925597, guid: 22033a4154881754b903495830fd9f49, type: 3}
+      propertyPath: facialChangePoint.Array.data[3]
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22033a4154881754b903495830fd9f49, type: 3}
