@@ -4728,8 +4728,6 @@ GameObject:
   - component: {fileID: 6557662655179925586}
   - component: {fileID: 6557662655179925587}
   - component: {fileID: 6557662655179925591}
-  - component: {fileID: 8109130764295096128}
-  - component: {fileID: 2886936061959014345}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -5461,41 +5459,6 @@ MonoBehaviour:
   hmd: {fileID: 0}
   playerLeftHand: {fileID: 0}
   playerRightHand: {fileID: 0}
---- !u!114 &8109130764295096128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3676524732853675827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f82dc4fde919a40a3bd261bd4c98f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookAtObj: {fileID: 0}
-  lookAtWeight: 1
-  bodyWeight: 0.4
-  headWeight: 0.7
-  eyesWeight: 0.5
-  clampWeight: 0.5
---- !u!114 &2886936061959014345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3676524732853675827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce2df58c2db9b5428074e8a2327acb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handShakeTime: 1
-  randTime: 5
-  cameraObj: {fileID: 0}
-  handLObj: {fileID: 0}
-  handRObj: {fileID: 0}
 --- !u!1 &3690724432095488484
 GameObject:
   m_ObjectHideFlags: 0
